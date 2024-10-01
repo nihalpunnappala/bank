@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://bank-app-new-lc.netlify.app/home.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- CSS only -->
+<link href="./Document_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="./Document_files/bootstrap.bundle.min.js.download" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <!-- nav bar -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg  bg-primary fixed-top">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class=" col-6 collapse navbar-collapse" id="navbarExample01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link text-light" aria-current="page" href="https://bank-app-new-lc.netlify.app/home.html#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="https://bank-app-new-lc.netlify.app/home.html#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="https://bank-app-new-lc.netlify.app/home.html#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="https://bank-app-new-lc.netlify.app/home.html#">About</a>
+                </li>
+              </ul>
+            </div>
+            <div class=" col-3"></div>
+            <div class=" col-3 collapse navbar-collapse" id="navbarExample01">
+             
+                <a class="nav-link text-light ms-5 ps-5" href="https://bank-app-new-lc.netlify.app/" onclick="logout()">Logout</a>
+          
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar -->
+      
+        <!-- Background image -->
+        <div class="p-5 text-center bg-image" style="
+            background-image: url(&#39;https://www.quoteinspector.com/media/credit/credit-cards-weathered-wood-wo.jpg&#39;);
+            height: 700px;
+            width: 100%;
+            margin-top: 58px;
+          ">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white">
+                <h1 id="uname" class="mb-3">Welcome User</h1>
+                <h4 class="mb-3">Online Banking Services</h4>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="text-white mt-3 shadow">Deposit</h1>
+
+                    <form action="https://bank-app-new-lc.netlify.app/home.html" class="border shadow p-3">
+                        <input type="text" id="deposite_amnt" class="form-control mb-2" placeholder="Enter Your Amount">
+                        <input type="text" id="deposite_acno" class="form-control" placeholder="Enter Your Account Number">
+                        <div class="text-center p-2">
+                            <button class="btn btn-primary shadow" type="button" onclick="depositeMoney()">Deposit</button>
+                        </div>
+                       
+                        <div id="balance_amount">
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-6">
+                    <h1 class="text-white mt-3 shadow">Withdraw</h1>
+                   
+                    <form action="https://bank-app-new-lc.netlify.app/home.html" class="border shadow p-3">
+                        <input type="text" id="withdraw_amnt" class="form-control mb-2" placeholder="Enter Your Amount">
+                        <!-- <input type="text" id="withdraw_pswd" class="form-control" placeholder="Enter Your Password"> -->
+                        <input type="text" id="withdraw_acno" class="form-control" placeholder="Enter Your account No">
+
+                        <div class="text-center p-2">
+                            <button class="btn btn-primary shadow" type="button" onclick="Withdraw()">Withdraw</button>
+                        </div>
+                       <div id="Withdraw_amnt"> </div>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Background image -->
+      </header>
+    <!-- home page -->
+    <!-- footer -->
+    <footer class="bg-primary text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <form action="https://bank-app-new-lc.netlify.app/home.html">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-auto mb-4 mb-md-0">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-md-5 col-12 mb-4 mb-md-0">
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form5Example25" class="form-control">
+                  <label class="form-label" for="form5Example25">Email address</label>
+                </div>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-auto mb-4 mb-md-0">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+
+<script src="./Document_files/bank.js.download"></script>
+
+</body></html>
