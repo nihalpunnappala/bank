@@ -21,8 +21,17 @@ function deposit() {
         // Update the localStorage with the new balance
         localStorage.setItem(accountNum, JSON.stringify(userDetail));
 
-        // Show success alert
-        alert(`Amount added successfully!.`);
+       // Show success alert using SweetAlert
+       Swal.fire({
+       icon: 'success',
+       title: 'Success',
+       text: 'Amount added successfully!',
+       background: '#6e63ff', // Light green background for success
+       color: 'white', // Dark green text color
+       iconColor: 'white', // Matching icon color
+       confirmButtonColor: 'green', // Confirm button color
+});
+
 
         // Update the result section to show the current balance
         document.getElementById('result').innerText = `Your Current Balance: ${userDetail.balance.toFixed(2)}`;
@@ -78,7 +87,16 @@ function withdraw() {
             localStorage.setItem(accountNum, JSON.stringify(userDetail));
 
             // Show a success alert box
-            alert('Your amount has been successfully withdrawn.');
+            Swal.fire({
+                icon: 'success',
+                iconColor: 'white',
+                title: 'Success',
+                background: 'green', // Correct property for background color
+                confirmButtonColor: 'blue', // Confirm button color
+                color: 'white', // Text color
+                text: 'Your amount has been successfully withdrawn.',
+            });
+            
 
             // Show the new balance after withdrawal
             alert(`After Withdrawal Balance: ${userDetail.balance.toFixed(2)}`);
